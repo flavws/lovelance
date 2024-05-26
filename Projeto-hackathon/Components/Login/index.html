@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Projeto-hackathon/Components/Login/index.css">
+    <title>Lovelace</title>
+</head>
+  <body>
+    <div class="welcome-container" id="welcomeContainer">
+      <div class="firstScreen">
+        <div class="imageContainer">
+        </div>
+        <div class="descriptionContainer">
+          <div class="dotsContainer">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+          </div>
+          <span>
+            Estamos felizes em ter você aqui!
+          </span>
+          <p class="descriptionParagraph">
+            Lovelace: onde mulheres gamers conectam, inspiram e vencem juntas.
+          </p>
+          <button class="nextButton" onclick="showLoginRegister()">Próximo</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="container hidden" id="loginContainer">
+      <div class="loginContent">
+        <div>
+          <div class="logoContainer">
+            <button class="backButton" onclick="showWelcome()">
+              <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M17.0156 8.01562V9.98438H4.82812L10.4062 15.6094L9 17.0156L0.984375 9L9 0.984375L10.4062 2.39062L4.82812 8.01562H17.0156Z" fill="#231826"/>
+              </svg>            
+            </button>
+            <img class="logoImage" src="/Assets/logoImage.svg" />   
+          </div>
+          <div class="emailContainer">
+            <label class="emailTitle" for="loginEmail">Email:</label>
+            <input type="email" id="loginEmail" placeholder="Email">
+          </div>   
+          <div class="passwordContainer">
+            <label class="passwordTitle" for="loginPassword">Senha:</label>
+            <input type="password" id="loginPassword" placeholder="Senha">
+          </div> 
+        </div>
+          <div class="registerAndLoginButton">
+            <button class="registerButton" onclick="showRegister()">Cadastre-se</button>
+            <button class="loginButton" onclick="login()">Entrar</button>
+         </div>
+      </div> 
+    </div>
+
+    <div class="container hidden" id="registerContainer1">
+      <div class="registerContent1">
+        <div >
+          <button class="backButton"  onclick="showLogin()">
+            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M17.0156 8.01562V9.98438H4.82812L10.4062 15.6094L9 17.0156L0.984375 9L9 0.984375L10.4062 2.39062L4.82812 8.01562H17.0156Z" fill="#231826"/>
+            </svg>  
+          </button>
+          <h2 class="registerTitle">Cadastro</h2>
+          <div>
+            <div class="registerNameContainer">
+              <label class="registerNameTitle" for="registerName">Nome</label>
+              <input type="text" id="registerName" placeholder="Nome">
+            </div>
+            <div class="registerEmailContainer">
+              <label class="registerEmailtitle" for="registerEmail">Email</label>
+              <input type="email" id="registerEmail" placeholder="Email">
+            </div>
+            <div class="registerPasswordContainer">
+              <label class="registerPasswordtitle" for="registerPassword">Senha</label>
+              <input type="password" id="registerPassword" placeholder="Senha">
+            </div>
+            <div class="registerConfirmPasswordContainer">
+              <label class="registerConfirmPasswordTitle" for="registerConfirmPassword">Confirmar senha</label>
+              <input type="password" id="registerConfirmPassword" placeholder="Confirmação de Senha">
+            </div>
+            <div class="registerNameContainer">
+              <label class="registerDobTitle" for="registerDob">Data de nascimento</label>
+              <input type="date" id="registerDob" placeholder="Data de Nascimento">
+            </div>
+          </div>
+        </div>
+          <button class="registerContinueButton" onclick="showPreferences()">Cadastrar</button>
+        </div>
+    </div>
+
+    <div class="container hidden" id="registerContainer2">
+      <button class="backButton" onclick="showRegister()">Voltar</button>
+        <div class="button-group">
+            <button onclick="togglePreference(this)">Jogos Digitais</button>
+            <button onclick="togglePreference(this)">Jogos de Mesa</button>
+            <button onclick="togglePreference(this)">Tecnologia</button>
+            <button onclick="togglePreference(this)">Filmes e Séries</button>
+            <button onclick="togglePreference(this)">Companhia para Jogar</button>
+            <button onclick="togglePreference(this)">Carreira Tech</button>
+        </div>
+        <br>
+        <button id="completeRegistration" onclick="completeRegistration()" disabled>Concluir Cadastro</button><br><br>
+        <button onclick="showRegister()">Voltar</button>
+    </div>
+    <script type="text/javascript" src="/Projeto-hackathon/index.js"></script>
+  </body>
+</html>

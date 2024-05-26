@@ -1,0 +1,212 @@
+.dot {
+    height: 11px;
+    width: 11px;
+    background-color: #E621A1;
+    border-radius: 50%;
+    display: inline-block;
+  }
+
+  body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+.container {
+    width: 100%;
+    height: 100%;
+    padding: 24px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.hidden {
+    display: none;
+}
+.button-group {
+    display: flex;
+    flex-direction: column;
+}
+.button-group button {
+    margin: 5px 0;
+}
+button:disabled {
+    background-color: #ccc;
+}
+
+.firstScreen{
+    flex-direction: column;
+    display: flex;
+}
+
+.firstScreen {
+    background-image: url('/Assets/loginCover.svg');
+    background-repeat: no-repeat;
+    object-fit: contain;
+    background-size: 100%;
+    height: 100%;
+    max-height: 610px;
+}
+
+.nextButton {
+    background: #E621A1;
+    border: none;
+    border-radius: 40px;
+    height: 48px;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.dotsContainer {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 21px;
+}
+
+.descriptionContainer {
+    display: flex;
+    flex-direction: column;
+    padding: 24px;
+    background: pink;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+}
+
+.descriptionParagraph {
+    margin-bottom: 70px;
+}
+
+.logoImage {
+    margin-top: 96px;
+}
+
+#loginEmail,
+#loginPassword,
+#registerName,
+#registerEmail,
+#registerPassword,
+#registerConfirmPassword,
+#registerDob {
+    border: 1px solid #A770B6;
+    border-radius: 8px;
+    padding: 8px 16px;
+}
+
+.emailContainer,
+.passwordContainer {
+    display: flex;
+    flex-direction: column; 
+}
+
+.emailTitle,
+.passwordTitle {
+    color: #231826;
+    font-size: 14px;
+    font-weight: normal;
+    margin-bottom: 8px;
+    margin-top: 8px;
+}
+
+.logoContainer {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 12px;
+}
+
+.backButton {
+    border: none;
+    background: none;
+    position: absolute;
+    top: 28px;
+    left: 24px;
+}
+
+.loginContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.registerButton {
+    border: 1px solid #3F0983;
+    border-radius: 40px;
+    background: none;
+    padding: 12px;
+    color: #3F0983;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.loginButton,
+.registerContinueButton  {
+    background: #E621A1;
+    border-radius: 40px;
+    padding: 12px;
+    border: none;
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.registerAndLoginButton {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: 24px;
+}
+
+.registerTitle {
+    display: flex;
+    margin-top: 96px;
+    color: #231826;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.registerNameTitle,
+.registerEmailtitle,
+.registerPasswordtitle,
+.registerConfirmPasswordTitle,
+.registerDobTitle {
+    color: #231826;
+    font-size: 14px;
+    font-weight: normal;
+    margin-bottom: 8px;
+}
+
+.registerEmailtitle,
+.registerPasswordtitle,
+.registerConfirmPasswordTitle,
+.registerDobTitle {
+    margin-top: 8px;
+}
+
+.registerNameContainer,
+.registerEmailContainer,
+.registerPasswordContainer,
+.registerConfirmPasswordContainer,
+.registerNameContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.registerContent1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.registerContinueButton {
+    margin-bottom: 24px;
+}
+
+.button-group {
+    margin-top: 96px;
+}

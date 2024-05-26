@@ -144,7 +144,8 @@ button:disabled {
 }
 
 .loginButton,
-.registerContinueButton  {
+.registerContinueButton,
+.completeRegistrationButton {
     background: #E621A1;
     border-radius: 40px;
     padding: 12px;
@@ -209,4 +210,31 @@ button:disabled {
 
 .button-group {
     margin-top: 96px;
+    gap: 16px;
+}
+
+.preferenceButton {
+    border: 1px solid #5D4663;
+    background: none;
+    border-radius: 16px;
+    width: 148px;
+    height: 128px;
+}
+
+.preference1,
+.preference2,
+.preference3 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.registerContent2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.completeRegistrationButton {
+    margin-bottom: 24px;
 }

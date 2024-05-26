@@ -122,6 +122,7 @@ button:disabled {
     position: absolute;
     top: 28px;
     padding: 0;
+    left: 0;
 }
 
 .loginContent {

@@ -213,12 +213,25 @@ button:disabled {
     gap: 16px;
 }
 
-.preferenceButton {
+.preferenceButtons {
     border: 1px solid #5D4663;
     background: none;
     border-radius: 16px;
-    width: 148px;
-    height: 128px;
+    max-width: 148px;
+    height: 96px;
+    width: 100%;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.preferenceButton {
+    border: none;
+    background: none;
+    color: #5D4663;
+    font-size: 16px;
+    font-weight: bold;
 }
 
 .preference1,
@@ -226,6 +239,7 @@ button:disabled {
 .preference3 {
     display: flex;
     justify-content: space-between;
+    gap: 16px;
 }
 
 .registerContent2 {
@@ -236,5 +250,12 @@ button:disabled {
 }
 
 .completeRegistrationButton {
+    margin-bottom: 24px;
+}
+
+.prefrencesTitle {
+    color: #231826;
+    font-size: 16px;
+    font-weight: normal;
     margin-bottom: 24px;
 }
